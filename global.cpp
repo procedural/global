@@ -1,3 +1,11 @@
+#if 0
+rm -f libglobal.a global.o 
+c++ -fPIE -c global.cpp
+ar  r libglobal.a global.o
+rm -f             global.o
+exit
+#endif
+
 #include <map>
 
 std::map<const char *, void *> __GLOBAL_MAP_8d802133c4cd76b93c9b6922c658bd55b1c9e3fdcedda89ba18afca5a8eb5070;
