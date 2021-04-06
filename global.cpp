@@ -1,8 +1,6 @@
 #if 0
-rm -f libglobal.a global.o 
-c++ -std=c++11 -fPIE -fno-exceptions -fno-rtti -c global.cpp
-ar  r libglobal.a global.o
-rm -f             global.o
+rm -f libglobal.so
+c++ -std=c++11 -fPIC -fno-exceptions -fno-rtti -static-libgcc -static-libstdc++ -shared global.cpp -o libglobal.so
 exit
 #endif
 
