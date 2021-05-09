@@ -4,6 +4,7 @@ c++ -std=c++11 -fPIC -fno-exceptions -fno-rtti -static-libgcc -static-libstdc++ 
 exit
 #endif
 
+#include <stdexcept>
 #include "flat_hash_map.hpp"
 #include <string>
 
